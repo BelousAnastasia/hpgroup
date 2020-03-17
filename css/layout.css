@@ -81,7 +81,6 @@ a:focus, a:hover, a:active {
   background: #57110f;
   content: " ";
 }
-
 span {
   font-size: 14px;
   font-weight: 400;
@@ -145,6 +144,33 @@ h4 {
 :active,
 :focus {
   outline: none;
+}
+
+ul.list{
+  padding-left: 20px;
+  margin-bottom: 0;
+  list-style: none;
+}
+ul.list > li{
+  position: relative;
+  margin-bottom: 10px;
+}
+ul.list > li::before,ul.list > li::after{
+  position: absolute;
+    left: -15px;
+    top: 5px;
+}
+ul.list > li::before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: block;
+  border: 2px solid #57110F;
+}
+.border-solid{
+  border-left: 1px solid #57110F;
 }
 
 /* Section Seperator */
@@ -974,8 +1000,8 @@ fieldset[disabled] .btn-theme {
 
 .carousel-centered {
   position: absolute;
-  top: 50%;
-  transform: translate3d(0, -50%, 0);
+  top: 55%;
+  transform: translate3d(0, -45%, 0);
 }
 
 .carousel-title {
